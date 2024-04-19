@@ -7,7 +7,7 @@
 }
 
 /* type selectors select all elemets of that type */
-/* type selectors can be grouped with a comma if rules apply to more than one selector */
+/* type selectors can be grouped with a comma if rules apply to more than one selector (grouping selectors)*/
 h1,
 h2,
 p {
@@ -39,13 +39,20 @@ ul {
     text-align: left;
 }
 
-/* Chain selectors so that rule only applies if an element has all chained selectors as classes/type etc. */
+/* Chaining selectors so that rule only applies if an element has all chained selectors as classes/type etc. */
 h2.description {
     font-style: italic;
 }
 
 .allergens {
     font-size: small;
+}
+
+/* descendant combinators are used to apply rules to an element iff element matches selector and has an
+ancestor that matches the first selector. Descendant combinator are represeted by a single space*/
+
+ul .recipe-link {
+    color: white
 }
 
 /* Cascade:
