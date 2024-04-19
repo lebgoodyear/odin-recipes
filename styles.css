@@ -1,9 +1,13 @@
 /* CSS rules */
 
+
+/* universal selector selects everything */
 * {
     background-color: #383838;
 }
 
+/* type selectors select all elemets of that type */
+/* type selectors can be grouped with a comma if rules apply to more than one selector */
 h1,
 h2,
 p {
@@ -19,12 +23,23 @@ ol {
     color: white
 }
 
+/* set a rule that only applies to one selector but note this would be overwritten if
+same declaration is also in group selector (cascade means rule for largest number of selectors win
+if selectors are all of same specificity) */
 ul {
     list-style: none;
 }
 
+/* class selectors apply to all elements of that class */
 .ingredients {
     list-style:square;
 }
 
-
+/* Cascade:
+Specifity means more specific rule always wins (ID > Class > Type > Universal).
+The rule with the largest number of selectors always wins if specificity is equal.
+Typography-based properties (color, font-size, font-family, etc.) are usually inherited by child
+but these are always overwritten by more specific rules.
+If there are conflicting rules for the same number of selectors of the same type, rule defined last
+(nearest the bottom of the css document) wins.
+*/
