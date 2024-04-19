@@ -35,6 +35,19 @@ ul {
     list-style:square;
 }
 
+.description {
+    text-align: left;
+}
+
+/* Chain selectors so that rule only applies if an element has all chained selectors as classes/type etc. */
+h2.description {
+    font-style: italic;
+}
+
+.allergens {
+    font-size: small;
+}
+
 /* Cascade:
 Specifity means more specific rule always wins (ID > Class > Type > Universal).
 The rule with the largest number of selectors always wins if specificity is equal.
