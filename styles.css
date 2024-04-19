@@ -4,14 +4,26 @@
     background-color: darkgrey;
 }
 
-h1 {
+h1,
+h2,
+p {
     text-align: center;
     font-family: Arial, sans-serif;
     color: white
 }
 
-ul li {
-    list-style: none;
+ul,
+ol {
     line-height: 100px;
+    font-family: Arial, sans-serif;
+    color: white
+}
+
+ul {
+    list-style: none;
+}
+
+.ingredients {
+    list-style:square;
 }
 
