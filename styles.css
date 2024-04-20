@@ -1,5 +1,11 @@
 /* CSS rules */
 
+/* html selector applies to everything within the html tags.
+It doesn't overwrite any more specific styling, which * can sometimes do. */
+html {
+    box-sizing: border-box;
+}
+
 
 /* universal selector selects everything */
 * {
