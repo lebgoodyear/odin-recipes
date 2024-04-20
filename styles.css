@@ -6,7 +6,6 @@ html {
     box-sizing: border-box;
 }
 
-
 /* universal selector selects everything */
 * {
     background-color: #383838;
@@ -69,3 +68,9 @@ but these are always overwritten by more specific rules.
 If there are conflicting rules for the same number of selectors of the same type, rule defined last
 (nearest the bottom of the css document) wins.
 */
+
+.container {
+    border: 10px solid white;
+    max-width: 800px;
+    margin: auto;
+}
