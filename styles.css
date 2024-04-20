@@ -57,7 +57,13 @@ h2.description {
 ancestor that matches the first selector. Descendant combinator are represeted by a single space*/
 
 ul .recipe-link {
-    color: white
+    color: white;
+    border: 2px solid lightgrey;
+    max-width: 500px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
 }
 
 /* Cascade:
