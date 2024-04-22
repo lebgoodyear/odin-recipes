@@ -4,6 +4,8 @@
 It doesn't overwrite any more specific styling, which * can sometimes do. */
 html {
     box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* universal selector selects everything */
@@ -18,7 +20,15 @@ h2,
 p {
     text-align: center;
     font-family: Arial, sans-serif;
-    color: white
+    color: white;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    text-align: center;
+    vertical-align: top;
 }
 
 ul,
@@ -33,6 +43,10 @@ same declaration is also in group selector (cascade means rule for largest numbe
 if selectors are all of same specificity) */
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none; /* removes underline from links */
 }
 
 /* class selectors apply to all elements of that class */
@@ -56,14 +70,25 @@ h2.description {
 /* descendant combinators are used to apply rules to an element iff element matches selector and has an
 ancestor that matches the first selector. Descendant combinator are represeted by a single space*/
 
-ul .recipe-link {
+.recipe-link {
+    display: block;
     color: white;
     border: 2px solid lightgrey;
-    max-width: 500px;
-    padding: 10px;
+    max-width: 600px;
     margin: 20px auto;
-    display: block;
-    text-align: center;
+}
+
+
+.recipe-link .recipe-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.recipe-link .recipe-pic {
+    max-width: 100px;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
 }
 
 /* Cascade:
@@ -79,4 +104,5 @@ If there are conflicting rules for the same number of selectors of the same type
     border: 10px solid white;
     max-width: 800px;
     margin: auto;
+    padding: 0px;
 }
