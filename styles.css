@@ -44,6 +44,7 @@ same declaration is also in group selector (cascade means rule for largest numbe
 if selectors are all of same specificity) */
 ul {
     list-style: none;
+    padding: 0px;
 }
 
 a {
